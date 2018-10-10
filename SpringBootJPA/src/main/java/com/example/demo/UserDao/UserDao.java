@@ -6,7 +6,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.demo.Bean.Boy;
 
-public interface UserDao extends JpaRepository<Boy, Long>{
+//使用繼承JpaRepository成功,使用繼承JpaRepository就不用實作UserDaoImpl
+//public interface UserDao extends JpaRepository<Boy, Long>{
+	public interface UserDao{
 	List<Boy> findAll();
 	
 	List<Boy> findByName(String name);

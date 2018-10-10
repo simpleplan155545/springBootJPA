@@ -41,4 +41,14 @@ public class UserController {
 		}
         return "addMemberPage";
     }
+	
+//	@RequestMapping(value="/insData")
+//    public String insData(){
+//		Boy boy=new Boy();
+//		boy.setHight("180");
+//		boy.setName("JAMES");
+//		userDao.save(boy);
+//		System.out.println("-------------------------------------------------------------");
+//        return "addDataSuccess";
+//    }
 }

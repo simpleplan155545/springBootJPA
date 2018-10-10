@@ -10,6 +10,7 @@ import javax.persistence.Table;
 import org.springframework.stereotype.Component;
 
 //https://ithelp.ithome.com.tw/articles/10194657
+//DAO使用繼承JpaRepository成功,使用繼承JpaRepository就不用實作UserDaoImpl
 @Entity
 @Table(name = "BOYUSER")
 public class Boy {
@@ -40,10 +41,10 @@ public class Boy {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	
-	@Column(name="Name")
+	@Column(name="NAME")
 	private String name;
 	
-	@Column(name="Hight")
+	@Column(name="HIGHT")
 	private String hight;
 
 	public int getId() {
